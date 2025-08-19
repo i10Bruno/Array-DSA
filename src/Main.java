@@ -14,12 +14,12 @@ public class Main {
 
     public static void main(String[] args) {
         //array
-        int[]Numbers = new  int [5];
+        //int[]Numbers = new  int [5];
 
-        int currentLenght=0;
+        // int currentLenght=0;
 
 
-        for (int i=0;i< 2; i++){
+        /*for (int i=0;i< 2; i++){
 
             Numbers[i]=i+100;
             currentLenght++;
@@ -31,5 +31,41 @@ public class Main {
         System.out.println(currentLenght);
 
 
+
+
+
+        int [] valores ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int valorInserido = 100;
+        int indexInserir=5;
+
+
+        System.out.println(Arrays.toString(valores));
+
+
+
+*/
+
+        int [] valores ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int valorInserido = 100;
+        int indexInserir=5;
+
+
+        System.out.println(Arrays.toString(valores));
+        for (int i = valores.length-2;i>=indexInserir;i--){
+            System.out.println(i);
+
+            valores[i+1]=valores[i];
+
+        }
+        valores[indexInserir] = valorInserido;
+        System.out.println(Arrays.toString(valores)); // [1, 2, 3, 4, 5, 100, 6, 7, 8, 9]
+
+
+
+
+
     }
+
+
+
 }
