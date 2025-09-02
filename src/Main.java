@@ -44,6 +44,7 @@ public class Main {
 
 
 */
+        /*
 
         int [] valores ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int valorInserido = 100;
@@ -51,16 +52,36 @@ public class Main {
 
 
         System.out.println(Arrays.toString(valores));
-        for (int i = valores.length-2;i>=indexInserir;i--){
-            System.out.println(i);
 
-            valores[i+1]=valores[i];
+        // i = tamanho - 2  -> o 8
+        //enquanto o 8> indexinserir = 5;
+        //i--
+
+       // for (int i = valores.length-2 ; i>=indexInserir; i--){
+         //   System.out.println(i);
+
+         //  valores[i+1]=valores[i];
 
         }
-        valores[indexInserir] = valorInserido;
-        System.out.println(Arrays.toString(valores)); // [1, 2, 3, 4, 5, 100, 6, 7, 8, 9]
+        //valores[indexInserir] = valorInserido;
+        //System.out.println(Arrays.toString(valores)); // [1, 2, 3, 4, 5, 100, 6, 7, 8, 9]
 
 
+
+*/
+
+        int [] valor ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int valorInserido = 100;
+        int indexdeletar=2;
+
+      for (int i = 2 ; i<valor.length; i++){
+
+           System.out.println(i);
+
+         valor[i-1]=valor[i];
+
+    }
+        System.out.println(Arrays.toString(valor));
 
 
 
